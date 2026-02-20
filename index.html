@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="classic">
   <head>
     <meta charset="utf-8" />
@@ -8,7 +8,7 @@
       content="Riterio | Thoughtful architecture and interior design. Responsive HTML5 + CSS3 + Tailwind + daisyUI showcase"
     />
     <!-- Title -->
-    <title>Riterio | Thoughtful Architecture and Interiors</title>
+    <title>Riterio - Thoughtful Architecture</title>
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Tailwind CSS CDN -->
@@ -546,7 +546,7 @@
               class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white"
             >
               <div class="font-semibold">Riverside Offices</div>
-              <div class="text-xs opacity-80">Commercial - 2025</div>
+              <div class="text-xs opacity-80">Commercial - 2026</div>
             </figcaption>
           </figure>
 
@@ -574,7 +574,7 @@
               class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white"
             >
               <div class="font-semibold">Retail Fitout</div>
-              <div class="text-xs opacity-80">Interior - 2025</div>
+              <div class="text-xs opacity-80">Interior - 2026</div>
             </figcaption>
           </figure>
         </div>
@@ -597,7 +597,7 @@
               class="rounded-lg w-full h-40 object-cover"
             />
             <div class="pt-3">
-              <div class="text-xs muted">November 09, 2025 - Design</div>
+              <div class="text-xs muted">November 09, 2026 - Design</div>
               <h3 class="font-semibold mt-2">
                 How to choose furniture that lasts
               </h3>
@@ -615,7 +615,7 @@
               class="rounded-lg w-full h-40 object-cover"
             />
             <div class="pt-3">
-              <div class="text-xs muted">November 09, 2025 - Process</div>
+              <div class="text-xs muted">November 09, 2026 - Process</div>
               <h3 class="font-semibold mt-2">
                 Why daylight matters more than you think
               </h3>
@@ -633,7 +633,7 @@
               class="rounded-lg w-full h-40 object-cover"
             />
             <div class="pt-3">
-              <div class="text-xs muted">November 09, 2025 - Materials</div>
+              <div class="text-xs muted">November 09, 2026 - Materials</div>
               <h3 class="font-semibold mt-2">Warm finishes for modern homes</h3>
               <p class="muted text-sm mt-2">
                 Mixing tactile timber with concrete and metal for layered
@@ -809,7 +809,10 @@
           <div class="font-semibold mb-2">Stay in touch</div>
           <form
             class="flex gap-2"
-            onsubmit="event.preventDefault(); alert('Thanks - demo only');"
+            onsubmit="
+              event.preventDefault();
+              alert('Thanks - demo only');
+            "
           >
             <input
               placeholder="Email"
@@ -901,7 +904,7 @@
         document.body.classList.add("theme-switching");
         setTimeout(
           () => document.body.classList.remove("theme-switching"),
-          300
+          300,
         );
       }
 
@@ -964,7 +967,7 @@
             btn.classList.remove("loading");
             btn.disabled = false;
             alert(
-              "Thanks! This is a demo form - integrate your backend endpoint."
+              "Thanks! This is a demo form - integrate your backend endpoint.",
             );
             e.target.reset();
           }, 1000);
@@ -986,7 +989,7 @@
       window.addEventListener("load", () => {
         reveal(
           Array.from(document.querySelectorAll("section, header, footer")),
-          60
+          60,
         );
       });
 
